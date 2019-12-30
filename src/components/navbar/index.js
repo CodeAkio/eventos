@@ -10,13 +10,13 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-expand-lg">
-            <span className="navbar-brand text-white font-wight-bold" href="#">Eventos</span>
+            <i className="far fa-smile-wink fa-2x text-white"></i>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                <i class="fas fa-bars text-white"></i>
+                <i className="far fa-smile-wink fa-5x text-white mb-4"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
-                    <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+                    <li className="nav-item ml-2"><Link className="nav-link" to="/">Home</Link></li>
 
                     {
                     useSelector(state => state.usuarioLogado) > 0 ?
