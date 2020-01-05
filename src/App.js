@@ -5,8 +5,9 @@ import { Provider } from 'react-redux'
 
 import Login from './view/login'
 import NovoUsuario from './view/usuario-novo'
-import Home from './view/home';
-import UsuarioRecuperarSenha from './view/usuario-recuperar-senha';
+import Home from './view/home'
+import UsuarioRecuperarSenha from './view/usuario-recuperar-senha'
+import EventoCadastro from './view/evento-cadastro';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/novousuario' component={NovoUsuario} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/usuariorecuperarsenha' component={UsuarioRecuperarSenha} />
+          <Route exact path='/eventocadastro' component={EventoCadastro} />
         </Switch>
       </BrowserRouter>
     </Provider>
